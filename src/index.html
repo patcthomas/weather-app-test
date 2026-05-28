@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow p-4" style="width: 100%; max-width: 450px">
+      <h1 class="text-center mb-4">🌤 Weather App</h1>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="city-input"
+          class="form-control"
+          placeholder="Enter a city..."
+        />
+        <button id="search-button" class="btn btn-primary">Search</button>
+      </div>
+
+      <div
+        class="card bg-primary text-center p-3 text-white"
+        id="weather-card"
+        style="display: none"
+      >
+        <h2 id="city-name" class="card-title"></h2>
+        <img id="weather-icon" src="" alt="weather icon" />
+        <p id="temperature" class="card-text fs-5"></p>
+        <p id="description" class="card-text text-muted"></p>
+        <p id="humidity" class="card-text text-muted"></p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
